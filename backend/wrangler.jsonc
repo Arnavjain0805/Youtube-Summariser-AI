@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "youtube-summarizer-backend",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-02",
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  },
+  "vars": {
+    "LLM_BASE_URL": "https://generativelanguage.googleapis.com/v1beta/openai/",
+    "LLM_MODEL": "gemini-3.6-flash",
+    "FRONTEND_URL": "https://youtube-video-summarizer-ai-beta.vercel.app",
+    "CORS_ORIGIN": "*"
+  }
+}
